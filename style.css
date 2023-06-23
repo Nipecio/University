@@ -406,7 +406,14 @@ h3 {
     padding-bottom: 50px;
 }
 
-.about-col {
+.about-us2 {
+    width: 80%;
+    margin: auto;
+    padding-top: -50px;
+    padding-bottom: 50px;
+}
+
+.about-col, .about-col2 {
     flex-basis: 48%;
     padding: 30px 2px;
 }
@@ -415,11 +422,15 @@ h3 {
     width: 100%;
 }
 
-.about-col h1 {
+.about-col2 img {
+    width: 100%;
+}
+
+.about-col h1, .about-col2 h1 {
     padding-top: 0;
 }
 
-.about-col p {
+.about-col p, .about-col2 p {
     padding: 15px 0 25px;
 }
 
@@ -561,4 +572,3 @@ h3 {
     border:  1px solid #ccc;
     box-sizing: border-box;
 }
-
