@@ -625,3 +625,18 @@ h3 {
     padding-bottom: 15px;
     border-radius: 5px;
 }
+
+.container .btn {
+    margin: 40px 0 70px 0;
+    padding: 15px 40px;
+}
+
+@media only screen and (max-width: 700) {
+    .container .box {
+        flex-direction: column;
+    }
+
+    .container .box .dream {
+        width: 100%;
+    }
+}
