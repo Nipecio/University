@@ -573,35 +573,6 @@ h3 {
     box-sizing: border-box;
 }
 
-.media-scroller {
-    --_spacer: var(--size-4);
-    display: grid;
-    gap: var(--_spacer);
-    grid-auto-flow: column;
-    grid-auto-columns: 21%;
-
-    padding: 0 var(--_spacer) var(--_spacer);
-
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-}
-
-.media-element {
-    display: grid;
-    gap: var(--_spacer);
-    grid-template-rows: min-content;
-    padding: var(--_spacer);
-    background: var(--surface-2);
-    border-radius: var(--radius-2);
-    box-shadow: var(--shadow-2);
-}
-
-.media-element > img {
-    inline-size: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-}
-
 .snaps-inline {
     scroll-snap-type: inline mandatory;
 }
@@ -609,4 +580,48 @@ h3 {
 .snaps-inline > * {
     scroll-snap-align: start;
     scroll-padding-inline: var(--_spacer);
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0px 20px;
+}
+
+.container .heads {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heads h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+    padding-bottom: 10px;
+}
+
+.container .heads h3 .spank{
+    font-weight: 100;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
 }
